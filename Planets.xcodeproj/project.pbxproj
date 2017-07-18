@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ECBB4511F1E1028007A5EEC /* PlanetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECBB4501F1E1028007A5EEC /* PlanetTableViewCell.swift */; };
 		0EF7EA271F1DF2BD003068A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7EA261F1DF2BD003068A3 /* AppDelegate.swift */; };
 		0EF7EA291F1DF2BD003068A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7EA281F1DF2BD003068A3 /* ViewController.swift */; };
 		0EF7EA2C1F1DF2BD003068A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA2A1F1DF2BD003068A3 /* Main.storyboard */; };
 		0EF7EA2E1F1DF2BD003068A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA2D1F1DF2BD003068A3 /* Assets.xcassets */; };
 		0EF7EA311F1DF2BD003068A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA2F1F1DF2BD003068A3 /* LaunchScreen.storyboard */; };
+		0EF7EA391F1DFF2E003068A3 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7EA381F1DFF2E003068A3 /* Planet.swift */; };
+		0EF7EA421F1E08D4003068A3 /* planet_mercury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA3A1F1E08D4003068A3 /* planet_mercury.jpg */; };
+		0EF7EA431F1E08D4003068A3 /* planet_neptune.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA3B1F1E08D4003068A3 /* planet_neptune.jpg */; };
+		0EF7EA441F1E08D4003068A3 /* planet_uranus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA3C1F1E08D4003068A3 /* planet_uranus.jpg */; };
+		0EF7EA451F1E08D4003068A3 /* planet_saturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA3D1F1E08D4003068A3 /* planet_saturn.jpg */; };
+		0EF7EA461F1E08D4003068A3 /* planet_jupiter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA3E1F1E08D4003068A3 /* planet_jupiter.jpg */; };
+		0EF7EA471F1E08D4003068A3 /* planet_mars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA3F1F1E08D4003068A3 /* planet_mars.jpg */; };
+		0EF7EA481F1E08D4003068A3 /* planet_earth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA401F1E08D4003068A3 /* planet_earth.jpeg */; };
+		0EF7EA491F1E08D4003068A3 /* planet_venus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7EA411F1E08D4003068A3 /* planet_venus.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ECBB4501F1E1028007A5EEC /* PlanetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanetTableViewCell.swift; path = ../PlanetTableViewCell.swift; sourceTree = "<group>"; };
 		0EF7EA231F1DF2BD003068A3 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF7EA261F1DF2BD003068A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF7EA281F1DF2BD003068A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,15 @@
 		0EF7EA2D1F1DF2BD003068A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EF7EA301F1DF2BD003068A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EF7EA321F1DF2BD003068A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF7EA381F1DFF2E003068A3 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		0EF7EA3A1F1E08D4003068A3 /* planet_mercury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_mercury.jpg; sourceTree = "<group>"; };
+		0EF7EA3B1F1E08D4003068A3 /* planet_neptune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_neptune.jpg; sourceTree = "<group>"; };
+		0EF7EA3C1F1E08D4003068A3 /* planet_uranus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_uranus.jpg; sourceTree = "<group>"; };
+		0EF7EA3D1F1E08D4003068A3 /* planet_saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_saturn.jpg; sourceTree = "<group>"; };
+		0EF7EA3E1F1E08D4003068A3 /* planet_jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_jupiter.jpg; sourceTree = "<group>"; };
+		0EF7EA3F1F1E08D4003068A3 /* planet_mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_mars.jpg; sourceTree = "<group>"; };
+		0EF7EA401F1E08D4003068A3 /* planet_earth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_earth.jpeg; sourceTree = "<group>"; };
+		0EF7EA411F1E08D4003068A3 /* planet_venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet_venus.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,32 @@
 		0EF7EA251F1DF2BD003068A3 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				0ECBB4501F1E1028007A5EEC /* PlanetTableViewCell.swift */,
 				0EF7EA261F1DF2BD003068A3 /* AppDelegate.swift */,
 				0EF7EA281F1DF2BD003068A3 /* ViewController.swift */,
+				0EF7EA381F1DFF2E003068A3 /* Planet.swift */,
 				0EF7EA2A1F1DF2BD003068A3 /* Main.storyboard */,
 				0EF7EA2D1F1DF2BD003068A3 /* Assets.xcassets */,
 				0EF7EA2F1F1DF2BD003068A3 /* LaunchScreen.storyboard */,
 				0EF7EA321F1DF2BD003068A3 /* Info.plist */,
+				0EF7EA4A1F1E08E2003068A3 /* Planet_Images */,
 			);
 			path = Planets;
+			sourceTree = "<group>";
+		};
+		0EF7EA4A1F1E08E2003068A3 /* Planet_Images */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7EA3A1F1E08D4003068A3 /* planet_mercury.jpg */,
+				0EF7EA3B1F1E08D4003068A3 /* planet_neptune.jpg */,
+				0EF7EA3C1F1E08D4003068A3 /* planet_uranus.jpg */,
+				0EF7EA3D1F1E08D4003068A3 /* planet_saturn.jpg */,
+				0EF7EA3E1F1E08D4003068A3 /* planet_jupiter.jpg */,
+				0EF7EA3F1F1E08D4003068A3 /* planet_mars.jpg */,
+				0EF7EA401F1E08D4003068A3 /* planet_earth.jpeg */,
+				0EF7EA411F1E08D4003068A3 /* planet_venus.jpg */,
+			);
+			name = Planet_Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +162,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF7EA431F1E08D4003068A3 /* planet_neptune.jpg in Resources */,
+				0EF7EA491F1E08D4003068A3 /* planet_venus.jpg in Resources */,
 				0EF7EA311F1DF2BD003068A3 /* LaunchScreen.storyboard in Resources */,
 				0EF7EA2E1F1DF2BD003068A3 /* Assets.xcassets in Resources */,
+				0EF7EA441F1E08D4003068A3 /* planet_uranus.jpg in Resources */,
 				0EF7EA2C1F1DF2BD003068A3 /* Main.storyboard in Resources */,
+				0EF7EA421F1E08D4003068A3 /* planet_mercury.jpg in Resources */,
+				0EF7EA481F1E08D4003068A3 /* planet_earth.jpeg in Resources */,
+				0EF7EA451F1E08D4003068A3 /* planet_saturn.jpg in Resources */,
+				0EF7EA471F1E08D4003068A3 /* planet_mars.jpg in Resources */,
+				0EF7EA461F1E08D4003068A3 /* planet_jupiter.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF7EA391F1DFF2E003068A3 /* Planet.swift in Sources */,
 				0EF7EA291F1DF2BD003068A3 /* ViewController.swift in Sources */,
 				0EF7EA271F1DF2BD003068A3 /* AppDelegate.swift in Sources */,
+				0ECBB4511F1E1028007A5EEC /* PlanetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +352,7 @@
 				0EF7EA371F1DF2BD003068A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

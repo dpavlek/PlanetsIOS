@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BU9-Lm-65e">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="planetCell" rowHeight="100" id="8bM-b7-hlP" customClass="PlanetTableViewCell" customModule="Planets" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8bM-b7-hlP" id="BOj-dh-urf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Ec-5c-5Tz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="pSu-Q6-rj9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0l-Sr-obg">
+                                                    <rect key="frame" x="108" y="8" width="259" height="84"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f0l-Sr-obg" firstAttribute="leading" secondItem="8Ec-5c-5Tz" secondAttribute="trailing" constant="8" symbolic="YES" id="Bk2-pa-YUq"/>
+                                                <constraint firstItem="f0l-Sr-obg" firstAttribute="trailing" secondItem="BOj-dh-urf" secondAttribute="trailingMargin" id="E2U-Ui-taj"/>
+                                                <constraint firstItem="8Ec-5c-5Tz" firstAttribute="top" secondItem="BOj-dh-urf" secondAttribute="top" id="GF4-tY-L6i"/>
+                                                <constraint firstItem="f0l-Sr-obg" firstAttribute="top" secondItem="BOj-dh-urf" secondAttribute="topMargin" id="RsL-9w-3ei"/>
+                                                <constraint firstItem="8Ec-5c-5Tz" firstAttribute="leading" secondItem="BOj-dh-urf" secondAttribute="leading" id="Yun-nc-d2Q"/>
+                                                <constraint firstItem="8Ec-5c-5Tz" firstAttribute="centerY" secondItem="f0l-Sr-obg" secondAttribute="centerY" id="ZG1-Sw-beb"/>
+                                                <constraint firstItem="8Ec-5c-5Tz" firstAttribute="centerY" secondItem="BOj-dh-urf" secondAttribute="centerY" id="gtr-z3-bgL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="planetImage" destination="8Ec-5c-5Tz" id="DRo-xx-c50"/>
+                                            <outlet property="planetLabel" destination="f0l-Sr-obg" id="9Za-FZ-5Ad"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BU9-Lm-65e" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="8CY-dX-p0d"/>
+                            <constraint firstItem="BU9-Lm-65e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ola-Sp-Lgz"/>
+                            <constraint firstItem="BU9-Lm-65e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qGf-Ve-XLv"/>
+                            <constraint firstAttribute="trailing" secondItem="BU9-Lm-65e" secondAttribute="trailing" id="tam-Bk-oLe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="BU9-Lm-65e" id="45R-pN-dAE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>
