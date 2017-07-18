@@ -52,8 +52,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "planetCell", for: indexPath) as? PlanetTableViewCell else{
             fatalError("Cell is not PlanetTableViewCell")
         }
-        cell.textLabel?.text = planets[indexPath.row].name
-        cell.imageView?.image = UIImage(named: planets[indexPath.row].image)
+        cell.planetLabel?.text = planets[indexPath.row].name
+        cell.planetImage?.image = UIImage(named: planets[indexPath.row].image)
         return cell
     }
 
