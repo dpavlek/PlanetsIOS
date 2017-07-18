@@ -19,11 +19,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let fileManager = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fileManager.contentsOfDirectory(atPath: path)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
 
         for item in items {
+            var planetName = item
+            if let startIndex = item.range(of: "."){
+                planetName.removeSubrange(startIndex.lowerBound..<item.endIndex)
+            }
+            
+            planetName = planetName.replacingOccurrences(of: "planet_", with: "").capitalized
+            
             if item.hasPrefix("planet") {
-                // let range = item.startIndex..<item.index(item.startIndex, offsetBy: 7)
-                planets.append(Planet(name: item.replacingOccurrences(of: "planet_", with: ""), image: item))
+                planets.append(Planet(name: planetName, image: item))
             }
         }
         print(planets)
@@ -41,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "planetCell", for: indexPath) as? PlanetTableViewCell else{
-            fatalError("Cell not an instance of PlanetTableViewCell")
+            fatalError("Cell is not PlanetTableViewCell")
         }
         cell.textLabel?.text = planets[indexPath.row].name
         cell.imageView?.image = UIImage(named: planets[indexPath.row].image)
@@ -51,5 +60,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    /*func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.textLabel?.isHidden = true
+    }*/
 
 }
